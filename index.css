@@ -1,0 +1,163 @@
+body{
+  background-image: url(images/fond.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+li{
+   list-style-type: none;
+   margin: 0 2vw;
+   font-size: 3vh;
+   line-height: 50px;
+}
+a{
+  text-decoration: none;
+  font-size: 15px;
+  
+  /*below I changed the color*/
+  color: red;
+  font-weight: bold;
+  /*I added some padding*/
+  padding: 2vw;
+  /*also changed the font family but that's totally irrelevant*/
+  font-family: ;
+}
+nav{
+	  background-color:black;
+    width: 100%;
+    padding-bottom:20px;
+    position: fixed;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.logo{
+	float: right;
+	position: relative;
+	bottom: 1px;
+  color: white;
+	font-family: Trattatello, fantasy;
+	margin-right: 90px;
+	font-size: 25px;
+  text-shadow: 2px 2px 2px red;
+
+}
+
+body{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  
+  /*this option by default dispose the elements in a row (flex-direction: row)*/
+  display: flex;
+}
+a:hover{
+  
+  border-bottom: 2px solid red;
+}
+button{
+  display: none;
+}
+.body1{
+  border:5px solid white;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  color: white;
+  margin: 200px;
+}
+.slides{
+  width: 900px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider{
+  display: block;
+  width: 8000px;
+  height: 400px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.slideshow {
+   width: 350px;
+   height: 350px;
+   overflow: hidden;
+   border:none;
+   margin: 0  auto;
+}
+
+.slideshow ul {
+    /* 4 images donc 4 x 100% */
+   width: 400%;
+   height: 200px;
+   padding:0; margin:0;
+   list-style: none;
+}
+.slideshow li {
+   float: left;
+}
+@media only screen and (max-width: 900px) {
+  nav{
+  width: 100%;
+  left: 0;
+  }
+  body{
+    width: 100%;
+  }
+  /*shows elements in a column*/
+  ul{
+    flex-direction: column;
+  }
+  
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
+    display: none;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
+  }
+  button{
+    /*makes the button visible*/
+    display: block;
+    
+    /*since we are here, we can style it a little bit!*/
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: #AFE0FF;
+    border: none;
+    
+    /*outline none removes the default blue border that appears anytime you click on the button*/
+    outline: none;
+    
+    cursor: pointer;
+  }
+  button{
+    display: block;
+    ...
+    cursor: pointer;
+    
+    /*this put the button on the left*/
+    align-self: flex-start;
+  }
+  .logo{
+  float: right;
+  position: relative;
+  bottom: 3px;
+  display: block;
+  font-size: 25px;
+   align-self: flex-start;
+
+}
+.body1{
+  border:5px solid white;
+  border-top-left-radius: 45px;
+  color: white;
+  margin: 45px;
+}
+}

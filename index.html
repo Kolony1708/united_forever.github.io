@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="index.css">
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css"> 
+    <link href="bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+	<title>Bienvenue</title>
+</head>
+<body onload="alert('vous naviguez sur united questions')">
+   <nav>
+		 <div class="logo">
+  	<h4>UNITED FOREVER</h4>
+  </div>
+  <ul>
+  	<button>☰</button>
+    <li> 
+      <!-- link one -->
+      <a href="index.html"> Acceuill</a>
+    </li>
+    <li>
+      <!-- link two -->
+       <a href="Question.html">Questions</a>
+    </li>
+    <li>
+      <!-- link three -->
+      <a href="#cv">Membres united</a>
+    </li>
+    <li>
+     
+    </li>
+  </ul>
+</nav>
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script>
+	$(document).ready(function(){
+  /* function called when you click of the button */
+  $("button").click(function(){
+      
+      /* this if else to change the text in the button */
+      if($("button").text() == "X"){
+       $("button").text("☰");
+      }else{
+        $("button").text("X");
+      }
+    
+    /* this function toggle the visibility of our "li" elements */
+    $("li").toggle("slow");
+  });
+});
+</script>
+<div class="container">
+  <div class="row">
+       <div class="span12">
+           <!--notre titre-->
+            <center> <h3 style="margin-top: 100px;text-shadow: 1px 1px 1px red;">ENTRAINEZ-VOUS AVEC NOUS</h3></center>
+            
+            <!--notre tableau-->
+           
+            <table align="center">
+                <tr>
+                    <td><img src="benzema.jpg" width="200" height="200"></td>
+                    <td><img src="stanley.jpg" width="200" height="200"></td>
+                    <td><img src="pele.jpg" width="200" height="200"></td>
+                </tr>
+                <tr>
+                 <td><img src="congo.jpg" width="200" height="200"></td>
+                 <td><img src="christ.jpg" width="200" height="200"></td>
+                 <td><img src="kili.jpg" width="200" height="200"></td>
+             </tr>
+            </table>
+            <p align="center" style="font-size: 19px; line-height: 25px;font-family: OCR A Std, monospace;">
+               Si vous êtes passione du savoir ce plateforme vous aidera a ameliore vos 
+               performances et vous vous demanderez parfois qui sommes-nous?nous sommes
+               une associaation des jeunes nomme untited forever nous avons un but precis 
+               pour la societe dont on ne peut en parler 
+             </p>
+             <p align="center" style="font-size: 19px; line-height: 25px;font-family: OCR A Std, monospace;">
+                Mais notre departement culturel en a biensûre il se base sure le developpement
+                de la jeunesse en base des connaîssance voit le but de la conception de ce plateforme
+               </p>
+
+               <p align="center">
+                 <img src="united.jpg" width="300" height="300">
+               </p>
+       </div>
+  </div>
+</div>
+
+</body>
+</html>
